@@ -9,17 +9,14 @@ const props = defineProps({
     required: true,
   },
 })
-
-const onClickHandler = () => {
-  window.open(props.href, 'blank')
-}
 </script>
 
 <template>
-  <div
+  <a
     class="bg-blue-200 text-blue-600 bg-opacity-20 px-2 cursor-pointer"
-    @click="onClickHandler"
+    :href="props.href"
+    target="blank"
   >
     {{ props.text }}
-  </div>
+  </a>
 </template>

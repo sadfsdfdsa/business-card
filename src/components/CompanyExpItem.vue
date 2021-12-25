@@ -23,17 +23,17 @@ const props = defineProps({
 const tagsString = computed(() => {
   return '#' + props.tags.join(' #')
 })
-
-const openSite = () => {
-  window.open(props.site, 'blank')
-}
 </script>
 
 <template>
   <div class="flex flex-row mt-5 items-baseline justify-center">
-    <span class="text-xl mr-2 font-semibold cursor-pointer" @click="openSite">
+    <a
+      class="text-xl mr-2 font-semibold cursor-pointer"
+      :href="props.site"
+      target="blank"
+    >
       {{ name }}
-    </span>
+    </a>
     <span>/ {{ position }}</span>
   </div>
   <div class="flex justify-center text-center flex-row tracking-widest">
