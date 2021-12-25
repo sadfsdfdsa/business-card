@@ -5,6 +5,5 @@
 
 [[redirects]]
   from = “/robots.txt”
-  to = “/robots.txt
+  to = “/robots.txt"
   status = 200
-  force = true
