@@ -6,7 +6,7 @@ import CompanyExpItem from './components/CompanyExpItem.vue'
 const contactLinks: { href: string; text: string }[] = [
   {
     text: 'telegram',
-    href: 'https://tg.me/karanarqq',
+    href: 'https://telegram.me/karanarqq',
   },
   {
     text: 'github',
