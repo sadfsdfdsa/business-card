@@ -26,26 +26,35 @@ const contactLinks: { href: string; text: string }[] = [
   },
 ]
 
-const experienceItems: { name: string; position: string; tags: string[] }[] = [
+const experienceItems: {
+  name: string
+  position: string
+  tags: string[]
+  site: string
+}[] = [
   {
     name: 'sidekick browser',
     position: 'senior frontend developer',
     tags: ['Typescript', 'Svelte.js', 'Chromium', 'Node.js', 'NestJS'],
+    site: 'https://www.meetsidekick.com',
   },
   {
     name: 'ozon',
     position: 'senior frontend developer',
     tags: ['Javascript', 'Typescript', 'Vue.js', 'Postcss', 'RxJS'],
+    site: 'https://www.ozon.ru',
   },
   {
     name: 'tada.team',
     position: 'middle frontend developer',
     tags: ['Typescript', 'Vue.js', 'WebSockets', 'WebRTC', 'Electron'],
+    site: 'https://tada.team',
   },
   {
     name: 'get-net',
     position: 'junior frontend developer',
     tags: ['Javascript', 'Vue.js', 'Lua', 'Tarantool', 'Nginx'],
+    site: 'https://www.get-net.ru/en',
   },
 ]
 
@@ -135,6 +144,7 @@ const scrollToBegin = () => {
         :name="company.name"
         :position="company.position"
         :tags="company.tags"
+        :site="company.site"
       />
     </div>
     <div ref="blockFour" class="max-w-lg m-auto mb-7">
