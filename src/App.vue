@@ -117,7 +117,7 @@ const scrollToBegin = () => {
       </button>
     </header>
     <div ref="blockTwo" class="max-w-lg m-auto">
-      <h2 class="text-2xl text-center">Links</h2>
+      <h1 class="text-2xl text-center">Links</h1>
       <div
         class="
           flex flex-wrap flex-row
@@ -137,7 +137,7 @@ const scrollToBegin = () => {
       </div>
     </div>
     <div ref="blockThree" class="max-w-lg m-auto mb-7">
-      <h2 class="text-2xl text-center">Experience</h2>
+      <h1 class="text-2xl text-center">Experience</h1>
       <CompanyExpItem
         v-for="(company, index) in experienceItems"
         :key="index"
@@ -148,7 +148,7 @@ const scrollToBegin = () => {
       />
     </div>
     <div ref="blockFour" class="max-w-lg m-auto mb-7">
-      <h2 class="text-2xl text-center">Articles</h2>
+      <h1 class="text-2xl text-center">Articles</h1>
       <div class="flex justify-center text-center mt-5 text-xl">
         <Link
           text="Ideal Vue.js and Typescript application"
@@ -163,7 +163,7 @@ const scrollToBegin = () => {
       </div>
     </div>
     <div ref="blockFive" class="max-w-lg m-auto mb-7">
-      <h2 class="text-2xl text-center">Open source</h2>
+      <h1 class="text-2xl text-center">Open source</h1>
       <div class="flex justify-center mt-5 text-xl">
         <Link
           text="OpenApi Typescript generator"
