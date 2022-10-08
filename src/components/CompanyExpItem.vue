@@ -28,7 +28,7 @@ const tagsString = computed(() => {
 <template>
   <div class="flex flex-row mt-5 items-baseline justify-center">
     <a
-      class="text-xl mr-2 font-semibold cursor-pointer"
+      class="underline text-xl mr-2 font-semibold cursor-pointer hover:text-blue-800"
       :href="props.site"
       target="blank"
     >
